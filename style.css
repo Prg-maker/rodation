@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#slider{
+    height:180px;
+    width: 50vw;
+    max-height: 190px;
+    position: relative;
+}
+img{
+    opacity: 0;
+    position:absolute ;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    
+    transition: 2s;
+    animation-name: transition ;
+}
+.select{
+    opacity: 100%;
+    
+}
+
+
+
+
+
+
+
+
+@keyframes transition{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
+}
